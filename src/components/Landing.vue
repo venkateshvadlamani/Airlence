@@ -40,47 +40,50 @@
         </section>
 
         <section class="pricing">
-          <h2>Our Packages</h2>
+          <h2>Pricing</h2>
           <h4>Our drone packages include up to one hour of flight time on site. The flight will
-            occur within 
+            occur within 48 hours of confirmation weather permitting.
           </h4>
-          <article class="price">
-              <h4>Package</h4>
-              <h4>Basic</h4>
+          <article class="basic">
+              <h4>Basic Package</h4>
               <h6>
                 <span>$</span>
                 <span>99</span>
-                <span>PER LISTING</span>
+                <span>per listing</span>
               </h6>
               <ul>
                 <li>One 360 degree Panoramic view</li>    
-                <li>Turnaround time: 2 business days from flight date</li>
+                <li>2 business days turnaround from flight date</li>
               </ul>
           </article>
+          <article class="popular">
+              <h4>Popular Package</h4>
+              <h6>
+                <span>$</span>
+                <span>199</span>
+                <span>per listing</span>
+              </h6>
+              <ul>
+                <li>10 high definition aerial video clips</li>    
+                <li>15 high resolution aerial images</li>    
+                <li>2 business days turnaround from flight date</li>
+              </ul>
+          </article>
+          <article class="premium">
+              <h4>Premium Package</h4>
+              <h6>
+                <span>$</span>
+                <span>699</span>
+                <span>per listing</span>
+              </h6>
+              <ul>
+                <li>10 high definition aerial video clips</li>    
+                <li>15 high resolution aerial images</li>   
+                <li>60 second video with Branding, Text Captions, Music and Thermal Imaging</li>   
+                <li>2 business days turnaround from flight date</li>
+              </ul>
+          </article>          
         </section>
-
-
-      
-
-- per listing
-
-- $199 per listing
-    - 15 high resolution aerial images
-    - 10 high definition aerial video clips
-    - View samples
-    - Button - Place order
-
-- $699 per listing
-    - 15 high resolution aerial images
-    - 10 high definition aerial video clips
-    - 60 second video with
-      - Branding
-      - Text Captions
-      - Contact Information
-      - Music      
-    - Thermal imaging
-    - View samples
-    - Button - Place order
 
   </div>
 </template>
