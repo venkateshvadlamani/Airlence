@@ -1,0 +1,100 @@
+@import './_variables.scss';
+a:hover {
+    color: $primary-color;
+    background: white;
+    border: 3px solid $primary-color;
+    }
+
+//hero section        
+.hero {
+    header {
+        background: #2E1811;
+        background-image: url('../assets/winding-road.jpg');
+        background-size: cover;
+        height: 100vh;
+        color: #fff;
+        display: grid;
+        grid-template-columns: 50px repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);    
+        .title {
+            grid-column: 2/5;
+            grid-row: 3/4;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            h1 {
+                padding: 5px;                
+                font-size: 3rem;    
+                line-height: 1.2;             
+                }
+            p {
+                padding: 5px;
+                line-height: 1.4;                   
+                }            
+            a {
+                margin-top:30px;
+                padding:5px;
+                }
+            }
+        }        
+    }
+
+// businesses section        
+.customers {
+    background: $primary-brown;
+    color: $primary-color;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    padding: 2rem;
+    img {
+        order: -1;
+        align-self: center;
+        width: 100%;        
+        }
+    ul {
+        list-style: none;
+        padding: 0;
+        }
+    h3 {
+        margin: 0.5em 0 0;
+        line-height: 1.2;
+        font-weight: normal;
+        margin-bottom: 10px;
+        font-size: 2rem;
+        }
+    li {
+        line-height: 1.5;
+        border-top: 2px solid $primary-color;
+        }
+    li:last-child{
+        border-bottom: 2px solid $primary-color;        
+        }
+    .business {
+        display: flex;
+        flex-flow: column;
+        background: white;
+        padding: 2rem;
+        }
+    .personal {
+        display: flex;
+        flex-flow: column;
+        background: white;
+        padding: 2rem;   
+        }
+    }
+
+// pricing section
+.pricing {
+    margin: 0;
+    background: $primary-green;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+
+    .price {
+        height:50px;
+        }
+    }
+
