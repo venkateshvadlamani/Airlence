@@ -1,6 +1,47 @@
+
 .company {
-    border: 2px solid red;
-    display: grid;
-    grid-template: 2fr 5fr 2fr;
-    grid-gap: 10px;
+
+    header {
+        display: grid;
+        grid-template-columns: 100px 3fr 1fr;
+        grid-gap: 10px;
+        margin: 50px;
+        h1 {
+            grid-column: 1/2;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            font-weight: normal;
+            font-size: 1rem;
+            text-transform: uppercase;
+            justify-self: center;
+            align-self: center;
+            line-height: 1.5;
+            }        
+        img {
+            grid-column: 2/3;
+            display: block;
+            width: 100%;
+            }   
+        .headlines {
+            grid-column: 2/3;     
+            h2 {
+                margin-top: 30px;
+                margin-bottom: 0;
+                font-size: 2rem;
+                }
+            h4 {
+                margin-top:  5px;
+                font-weight: normal;                
+                }
+            p {
+                font-size: 1.2rem;
+                line-height: 1.5;                
+                }
+            }
+            .contact {
+                //text-align: center;
+                }
+        }
+
+    
     }
