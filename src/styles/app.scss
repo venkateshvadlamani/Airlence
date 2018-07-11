@@ -1,28 +1,53 @@
 @import './_variables.scss';
 
-nav {    
+nav {
     background: $primary-color ; 
     color: white;
+    padding: 1rem;
     display: grid;
-    grid-template-columns: 20px repeat(8, 1fr);
-    height: 50px;
+    grid-gap: 10px;        
+    }
+h1 {
+    grid-area: title;
+    }
+ul {
+    grid-area: links;
+    list-style: none;    
+    display: flex;
+    align-self: center;    
+    }
+
+@media only screen and (min-width: 500px) {
+    nav {    
+        grid-template-columns: 1fr 2fr;        
+        grid-template-areas: 
+        "title links"
+        }
+    h1 {
+        font-size: 2rem;
+        }
+    ul {
+        justify-self: end;
+        }
     }
 // brand
-h1 {
-    grid-column: 2/4;
-    margin: 0;    
-    align-self: center;
+@media only screen and (max-width: 500px){
+    nav {    
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "title"
+            "links"
+        }    
+    h1 {
+        align-self: center;
+        justify-self: center;
+        }
+    // nav links
+    ul {
+        justify-items: center;
+        }    
     }
-// nav links
-ul {
-    grid-column: 8/10;
-    list-style: none;
-    margin: 0;  
-    padding: 0;
-    display: flex;
-    justify-content: end;
-    align-self: center;
-    }
+// common selectors
 li {
     text-decoration: none;
     margin-right: 30px;
