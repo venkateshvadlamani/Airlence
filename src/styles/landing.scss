@@ -53,25 +53,33 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 2rem;
-    margin-top: 1rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    img {
+    max-width: none; 
+    margin: 0;
+    padding: 2rem;
+    article {
+        display: flex;
+        flex-flow: column;
+        padding: 2rem;
+        border: 2px solid $primary-color;
+        box-shadow: 5px 10px;
+        }    
+    article > img {
         order: -1;
-        align-self: center;
-        width: 100%;        
+        align-self: center;  
+        width: 100%;    
         }
-    ul {
-        list-style: none;
-        padding: 0;
-        }
-    h3 {
-        margin: 0.5em 0 0;
+    article > h3 {
+        margin: 1rem 1rem 0;
         line-height: 1.2;
         font-weight: normal;
         margin-bottom: 10px;
         font-size: 2rem;
+        }            
+    article > ul {
+        list-style: none;
+        padding: 0;
         }
+
     li {
         line-height: 1.5;
         border-top: 2px solid $primary-color;
@@ -79,12 +87,5 @@ a:hover {
     li:last-child{
         border-bottom: 2px solid $primary-color;        
         }
-    article {
-        display: flex;
-        flex-flow: column;
-        background: white;
-        padding: 2rem;
-        border: 2px solid $primary-color;
-        box-shadow: 5px 10px;
-        }
+
     }

@@ -2,9 +2,9 @@
     <div class="pricing">
 
         <h2>Pricing</h2>
-        <h4>Our drone packages include up to one hour of flight time on site. The flight will
-        occur within 48 hours of confirmation weather permitting.
-        </h4>
+        <h1>Our drone packages for Northwest Arkansas include up to one hour of flight time on site.</h1>
+        <p>The flight will occur within 48 hours of confirmation subject to weather conditions.</p>
+        
         <article class="basic">
             <div class="package-type">
                 <h4>Basic Package</h4>
